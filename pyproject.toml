@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "automação whatsapp cs"
+version = "0.1.0"
+description = "Envio de menssagens para contatos listados"
+authors = ["Vinicius Weber <viniciussweber@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+keyboard = "^0.13.5"
+pywhatkit = "^5.4"
+flask = "^2.2.2"
+selenium = "^4.8.0"
+pandas = "^1.5.3"
+webdriver-manager = "^3.8.5"
+openpyxl = "^3.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
