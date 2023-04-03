@@ -17,8 +17,6 @@ driver.get("https://web.whatsapp.com/")
 while len(driver.find_elements(By.ID, "side")) < 1: #elemento que diz que a tela carregou -> finds me tras uma lista com todos elementos com ID igual a side e se ela for vazia significa que não existe elemento ainda    time.sleep(2)
     time.sleep(2)
 time.sleep(15) #garatnia
-# Definir contatos e grupos e a menssagem a ser enviada
-# contatos = []
 
 # whatssapp carregou
 tabela = pd.read_excel("mantenedores.xlsx")
@@ -29,8 +27,6 @@ for linha in tabela.index:
     #enviar menssagem pessoa
     # nome = tabela.loc[linha, coluna]
     nome = tabela.loc[linha, "nome"]
-    # mensagem = tabela.loc[linha, "mensagem"]
-    #arquivo = tabela.loc[linha, "arquivo"]
     telefone = tabela.loc[linha, "telefone"]
     valor = tabela.loc[linha, "valor"]
     
@@ -84,15 +80,4 @@ for linha in tabela.index:
     time.sleep(3)
     # campo_mensagem.send_keys(texto)
     driver.find_element(By.XPATH, '//span[contains(@data-testid,"send")]').click()
-    time.sleep(5)  
-    #input //input[@accept="*"]
-    #clip //span[contains(@data-testid,"clip")]  
-# # Buscar contatos/grupos
-# def buscar_contato(contato):
-#     driver.find_element(By.EXPATH)
-
-# for contato in contatos:
-#     buscar_contato(contato)
-    # enviar_mensagem(mensagem)
-# campo de pesquisa //*[@data-testid="chat-list-search"]
-# Enviar menssagens para o contato/grupo
+    time.sleep(5)
