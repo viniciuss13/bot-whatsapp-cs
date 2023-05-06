@@ -19,8 +19,8 @@ while len(driver.find_elements(By.ID, "side")) < 1: #elemento que diz que a tela
 time.sleep(15) #garatnia
 
 # whatssapp carregou
-tabela = pd.read_excel("mantenedores.xlsx")
-print(tabela[["nome", "mensagem", "arquivo", "telefone"]])
+tabela = pd.read_excel("mantenedorcs.xlsx")
+# print(tabela[["nome", "telefone", "valor"]])
 
 
 for linha in tabela.index:
