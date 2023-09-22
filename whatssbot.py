@@ -30,7 +30,7 @@ for linha in tabela.index:
     valor = tabela.loc[linha, "valor"]
     
     texto1 = "Olá, *Fulano!* Estamos muito felizes por você ter decidido ser parte do que Deus está fazendo em nossa cidade através do Centro Social da Lagoinha Salvador."
-    texto2 = f"*Aqui está a chave pix para enviar a sua oferta deste mês, no valor de R${valor:.2f}:* cslagoinhasalvador@gmail.com"
+    texto2 = f"*Aqui está a chave pix para enviar a sua oferta deste mês, no valor de R${valor:.2f}:* centrosocial@lagoinhabahia.com.br"
     texto3 = "Que Jesus continue abençoando sua vida!!"
     texto4 = "O Centro Social agradece pela sua contribuição."
     
@@ -72,11 +72,11 @@ for linha in tabela.index:
     
     time.sleep(3)
     caminho_completo = os.path.abspath('CSL_Lagoinha_ret.png')
-    driver.find_element(By.XPATH, '//span[contains(@data-testid,"clip")]').click()
+    driver.find_element(By.XPATH, '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div/div/div/div/span').click()
     driver.find_element(By.XPATH, '//input[contains(@accept,"image/*,video/mp4,video/3gpp,video/quicktime")]').send_keys(caminho_completo)
 
     # campo_mensagem[1]
     time.sleep(3)
     # campo_mensagem.send_keys(texto)
-    driver.find_element(By.XPATH, '//span[contains(@data-testid,"send")]').click()
+    driver.find_element(By.XPATH, '//*[@id="app"]/div/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div/span').click()
     time.sleep(5)
