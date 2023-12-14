@@ -6,7 +6,7 @@ authors = ["Vinicius Weber <viniciussweber@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.8, <=3.13"
 keyboard = "^0.13.5"
 pywhatkit = "^5.4"
 flask = "^2.2.2"

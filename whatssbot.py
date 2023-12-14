@@ -48,8 +48,8 @@ for linha in tabela.index:
     while (
         len(driver.find_elements(By.ID, "side")) < 1
     ):  # elemento que diz que a tela carregou -> finds me tras uma lista com todos elementos com ID igual a side e se ela for vazia significa que não existe elemento ainda    time.sleep(2)
-        time.sleep(2)
-    time.sleep(5)  # garatnia
+        time.sleep(10)
+    time.sleep(10)  # garatnia
 
     # verificar se número existe
     # if len(driver.find_element(By.XPATH, '//*[@id="app"]/div/span[2]/div/span/div/div/div/div/div/div[1]')) < 1:
@@ -60,46 +60,47 @@ for linha in tabela.index:
     # driver.find_element(By.XPATH, '//span[contains(@data-testid,"clip")]').click()
     # driver.find_element(By.XPATH, '//input[contains(@accept,"image/*,video/mp4,video/3gpp,video/quicktime")]').send_keys(caminho_completo)
     # time.sleep(10)
+    time.sleep(10)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(texto)
-    time.sleep(2)
+    time.sleep(10)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(Keys.SHIFT + Keys.ENTER)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(Keys.SHIFT + Keys.ENTER)
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(texto2)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(Keys.SHIFT + Keys.ENTER)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(Keys.SHIFT + Keys.ENTER)
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(texto3)
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(Keys.SHIFT + Keys.ENTER)
-    time.sleep(2)
+    time.sleep(5)
     driver.find_element(
         By.XPATH,
-        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p',
+        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div[2]/div[1]/p',
     ).send_keys(texto4)
 
     time.sleep(3)
@@ -118,6 +119,6 @@ for linha in tabela.index:
     # campo_mensagem.send_keys(texto)
     driver.find_element(
         By.XPATH,
-        '//*[@id="app"]/div/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div/span',
+        '//*[@id="app"]/div/div[2]/div[2]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div/span',
     ).click()
     time.sleep(5)
